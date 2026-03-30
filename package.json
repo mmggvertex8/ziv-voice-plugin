@@ -1,0 +1,9 @@
+{
+  "name": "ziv-voice-plugin",
+  "version": "1.0.0",
+  "description": "Voice call plugin extension - fixes responseModel and adds agent routing",
+  "type": "module",
+  "openclaw": {
+    "extensions": ["./index.js"]
+  }
+}

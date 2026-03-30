@@ -1,0 +1,27 @@
+{
+  "id": "ziv-voice",
+  "name": "Ziv Voice Plugin",
+  "description": "Extends voice-call with working responseModel config and agent routing mode",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "responseMode": {
+        "type": "string",
+        "enum": ["standalone", "agent"],
+        "default": "standalone"
+      },
+      "responseModel": {
+        "type": "string",
+        "description": "Model to use for voice responses, e.g. openai/gpt-4o-mini"
+      },
+      "responseSystemPrompt": {
+        "type": "string"
+      },
+      "responseTimeoutMs": {
+        "type": "integer",
+        "minimum": 1
+      }
+    }
+  }
+}
