@@ -5,7 +5,7 @@ export default definePluginEntry({
   name: "Ziv Voice Plugin",
 
   register(api) {
-    const config = api.getConfig();
+    const config = api.pluginConfig ?? {};
     const responseMode = config?.responseMode ?? "standalone";
     const responseModel = config?.responseModel ?? "openai/gpt-4o-mini";
     const responseSystemPrompt =
